@@ -5,39 +5,33 @@ public class Coordinates {
     private int latitude;
     private int height;
 
-    Coordinates(int longitude, int latitude, int height)
-    {
+    Coordinates(int longitude, int latitude, int height) {
         setLongitude(longitude);
         setLatitude(latitude);
         setHeight(height);
     }
 
-    public void setLongitude(int longitude)
-    {
+    public void setLongitude(int longitude) {
         this.longitude = longitude;
     }
 
-    public void setLatitude(int latitude)
-    {
+    public void setLatitude(int latitude) {
         this.latitude = latitude;
     }
 
-    public void setHeight(int height)
-    {
+    public void setHeight(int height) {
         this.height = height;
     }
 
-    public int getLongitude()
-    {
+    public int getLongitude() {
         return (this.longitude);
     }
 
-    public int getLatitude()
-    {
+    public int getLatitude() {
         return (this.latitude);
     }
 
-    public int getHeight()
-    {
+    public int getHeight() {
         return (this.height);
+    }
 }

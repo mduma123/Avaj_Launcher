@@ -1,5 +1,5 @@
 find . -name "*.java" > sources.txt
-javac -sourcepath . @sources.txt
-java avaj.weather.Simulator avaj/scenario.txt
+javac @sources.txt
+java simulator scenario.txt
 
 find . -name "*.class" -delete

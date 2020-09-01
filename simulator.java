@@ -1,6 +1,9 @@
-package FlyPlane;
+//package FlyPlane;
 
 import Aircraft.AircraftFactory;
+import FlyPlane.Flyable;
+import FlyPlane.Tower;
+import FlyPlane.WeatherTower;
 import java.util.List;
 import java.util.ArrayList;
 import java.io.BufferedReader;
@@ -11,8 +14,8 @@ import WriteFiles.WriteFiles;
 
 public class simulator {
 
-    private static List<Flyable> flyables = new ArrayList<Flyable>();
     private static WeatherTower weatherTower;
+    private static List<Flyable> flyables = new ArrayList<Flyable>();
 
     public static void main(String[] arg) throws InterruptedException {
 

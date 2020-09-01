@@ -1,7 +1,7 @@
 package FlyPlane;
 
 import Aircraft.Coordinates;
-import WeatherProvider.WeatherProvider;
+import Weather.WeatherProvider;
 
 public class WeatherTower extends Tower {
 
@@ -10,8 +10,8 @@ public class WeatherTower extends Tower {
         return WeatherProvider.getProvider().getCurrentWeather(coordinates);
     }
 
-    void changeWeather()
+    public void changeWeather()
     {
-        this.conditionChanged();
+        this.conditionsChanged();
     }
 }

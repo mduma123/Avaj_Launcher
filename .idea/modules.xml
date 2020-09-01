@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/avaj_launcher.iml" filepath="$PROJECT_DIR$/avaj_launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Avaj_launcher.iml" filepath="$PROJECT_DIR$/.idea/Avaj_launcher.iml" />
     </modules>
   </component>
 </project>

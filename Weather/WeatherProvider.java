@@ -1,4 +1,4 @@
-package WeatherPrivider;
+package Weather;
 
 import Aircraft.Coordinates;
 
@@ -8,17 +8,23 @@ public class WeatherProvider {
     private String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
 
 
-    private WeatherProvider ()
+     WeatherProvider ()
     {
 
     }
 
-    protected static WeatherProvider getProvider() {
+    public static WeatherProvider getProvider()
+    {
         return weatherProvider;
     }
 
-    protected String getCurrentWeather(Coordinates _coordinates) {
+    public String getCurrentWeather(Coordinates _coordinates) {
+         if(_coordinates.getHeight() < 0)
+         {
+             _coordinates.setHeight(3);
+         }
         return weather[(_coordinates.getLongitude() + _coordinates.getLatitude() + _coordinates.getHeight()) % 4];
-    }
+
+}
 
 }
